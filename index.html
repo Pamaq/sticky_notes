@@ -5,15 +5,24 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sticky Notes App</title>
+		<link href="styles.css" rel="stylesheet" />
 	</head>
 	<body>
 		<h1>Notes</h1>
 		<button class="addBtn">+</button>
-		<div>
-			<button class="colorBtn pink"></button>
-			<button class="colorBtn purple"></button>
-			<button class="colorBtn blue"></button>
+		<div class="colorChoice">
+			<button class="colorBtn pink">flower</button>
+			<button class="colorBtn purple">grape</button>
+			<button class="colorBtn blue">butterfly</button>
+			<button class="colorBtn green">leaf</button>
 		</div>
-		<div class="notepadSpace"></div>
+		<div class="notepadSpace">
+			<div class="note">
+				<div class="title">this is the title of note</div>
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+				eveniet eius soluta illo!
+			</div>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
