@@ -13,7 +13,7 @@ h1 {
 	background-color: rgb(246, 208, 214);
 	margin: 1rem;
 }
-.addBtn {
+/* .addBtn {
 	height: 2rem;
 	width: 2rem;
 	border-radius: 50%;
@@ -23,7 +23,7 @@ h1 {
 }
 .addBtn:active {
 	background-color: rgb(166, 202, 166);
-}
+} */
 .colorBtn {
 	height: 2rem;
 	width: 3rem;
@@ -35,14 +35,28 @@ h1 {
 	min-height: 100vh;
 	background-color: rgb(224, 224, 172);
 	margin: 1rem;
+	display: flex;
+	gap: 1rem;
 }
 .note {
 	height: auto;
 	width: 300px;
-	background-color: rgb(218, 152, 218);
+	border: solid 1px;
 }
 .title {
 	min-height: 1rem;
-	background-color: rgb(179, 116, 179);
+	border: solid 2px;
 	font-size: 1.25rem;
 }
+.pink {
+	background-color: pink;
+}
+/* .purple {
+	background-color: rgb(236, 188, 236);
+}
+.blue {
+	background-color: rgb(209, 209, 243);
+}
+.green {
+	background-color: rgb(176, 215, 176);
+} */
