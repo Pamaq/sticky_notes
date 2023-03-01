@@ -4,9 +4,11 @@ const blueBtn = document.querySelector(".blue");
 const greenBtn = document.querySelector(".green");
 const removeAllBtn = document.querySelector(".removeAllBtn");
 const notepadSpace = document.querySelector(".notepadSpace");
+
 const addNewCard = (color) => {
 	const newNote = document.createElement("div");
 	const newRemoveBtn = document.createElement("button");
+	const heartBtn = document.createElement("button");
 	const noteText = document.createElement("p");
 
 	newNote.classList.add("note");
@@ -16,6 +18,12 @@ const addNewCard = (color) => {
 	newRemoveBtn.style.alignSelf = "end";
 	newRemoveBtn.classList.add("removeAllBtn");
 	newNote.append(newRemoveBtn);
+	heartBtn.textContent = "<3";
+	newNote.append(heartBtn);
+	// heartBtn.addEventListener("click", function () {
+	// 	let notesArr = Array.from(querySelectorAll(".note div"));
+
+	// });
 	newRemoveBtn.addEventListener("click", function () {
 		newRemoveBtn.parentElement.remove();
 	});
