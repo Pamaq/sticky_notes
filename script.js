@@ -4,19 +4,27 @@ const blueBtn = document.querySelector(".blue");
 const greenBtn = document.querySelector(".green");
 const removeAllBtn = document.querySelector(".removeAllBtn");
 const notepadSpace = document.querySelector(".notepadSpace");
-
 const addNewCard = (color) => {
 	const newNote = document.createElement("div");
 	const newRemoveBtn = document.createElement("button");
-	newNote.textContent = "your text here";
+	const noteText = document.createElement("p");
+
 	newNote.classList.add("note");
 	notepadSpace.append(newNote);
 	newNote.classList.add(`${color}`);
 	newRemoveBtn.textContent = "X";
-	newNote.append(newRemoveBtn);
+	newRemoveBtn.style.alignSelf = "end";
 	newRemoveBtn.classList.add("removeAllBtn");
+	newNote.append(newRemoveBtn);
 	newRemoveBtn.addEventListener("click", function () {
 		newRemoveBtn.parentElement.remove();
+	});
+	noteText.textContent = "Click this text to write your note";
+	newNote.append(noteText);
+	newNote.classList.add("noteText");
+	noteText.addEventListener("click", function () {
+		let popupText = prompt("Please write your note here:");
+		noteText.textContent = `${popupText}`;
 	});
 };
 

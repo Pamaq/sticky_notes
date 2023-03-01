@@ -9,6 +9,8 @@ h1 {
 	background-color: rgb(223, 223, 238);
 	margin: 2rem;
 }
+p {
+}
 .colorChoice {
 	background-color: rgb(246, 208, 214);
 	margin: 1rem;
@@ -43,8 +45,7 @@ h1 {
 	gap: 1rem;
 }
 .note {
-	min-height: 200px;
-	width: 300px;
+	
 	border: solid 1px;
 }
 .title {
@@ -69,5 +70,10 @@ h1 {
 	width: 2rem;
 	border-radius: 5px;
 	border-color: rgb(137, 142, 145);
+	padding: 5px;
+	margin: 5px;
+}
+.noteText {
+	font-size: 0.75rem;
 	padding: 5px;
 }
