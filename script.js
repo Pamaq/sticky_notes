@@ -7,10 +7,17 @@ const notepadSpace = document.querySelector(".notepadSpace");
 
 const addNewCard = (color) => {
 	const newNote = document.createElement("div");
+	const newRemoveBtn = document.createElement("button");
 	newNote.textContent = "your text here";
 	newNote.classList.add("note");
 	notepadSpace.append(newNote);
 	newNote.classList.add(`${color}`);
+	newRemoveBtn.textContent = "X";
+	newNote.append(newRemoveBtn);
+	newRemoveBtn.classList.add("removeAllBtn");
+	newRemoveBtn.addEventListener("click", function () {
+		newRemoveBtn.parentElement.remove();
+	});
 };
 
 pinkBtn.addEventListener("click", function () {

@@ -29,7 +29,7 @@ h1 {
 } */
 .colorBtn {
 	height: 2rem;
-	border-radius: 15%;
+	border-radius: 5px;
 	border-color: rgb(137, 142, 145);
 	padding: 5px;
 }
@@ -67,7 +67,7 @@ h1 {
 .removeAllBtn {
 	height: 2rem;
 	width: 2rem;
-	border-radius: 15%;
+	border-radius: 5px;
 	border-color: rgb(137, 142, 145);
 	padding: 5px;
 }
