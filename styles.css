@@ -39,7 +39,7 @@ h1 {
 	gap: 1rem;
 }
 .note {
-	height: auto;
+	min-height: 200px;
 	width: 300px;
 	border: solid 1px;
 }

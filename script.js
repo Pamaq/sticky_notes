@@ -1,12 +1,15 @@
-const pinkBtn = document.getElementsByClassName("colorBtn pink");
-const notepadSpace = document.getElementsByClassName("notepadSpace");
-const addNewCard = (notepadSpace) => {
+const pinkBtn = document.querySelector(" .pink");
+const notepadSpace = document.querySelector(".notepadSpace");
+
+const addNewCard = (color) => {
 	const newNote = document.createElement("div");
-	document.body.notepadSpace.appendChild(newNote);
 	newNote.textContent = "your note";
 	newNote.classList.add("note");
-	return;
-	// newNote.classList.add(`${color}`);
+	notepadSpace.append(newNote);
+	newNote.classList.add(`${color}`);
 };
-
-pinkBtn.addEventListener("click", addNewCard(notepadSpace));
+// addNewCard("pink");
+// pinkBtn.addEventListener("click", addNewCard(pink));
+pinkBtn.addEventListener("click", function () {
+	addNewCard("pink");
+});
