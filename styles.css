@@ -12,6 +12,9 @@ h1 {
 .colorChoice {
 	background-color: rgb(246, 208, 214);
 	margin: 1rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
 /* .addBtn {
 	height: 2rem;
@@ -26,9 +29,9 @@ h1 {
 } */
 .colorBtn {
 	height: 2rem;
-	width: 3rem;
 	border-radius: 15%;
-	border-color: rgb(166, 202, 166);
+	border-color: rgb(137, 142, 145);
+	padding: 5px;
 }
 
 .notepadSpace {
@@ -60,4 +63,11 @@ h1 {
 }
 .green {
 	background-color: rgb(176, 215, 176);
+}
+.removeAllBtn {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 15%;
+	border-color: rgb(137, 142, 145);
+	padding: 5px;
 }

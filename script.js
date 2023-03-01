@@ -2,6 +2,7 @@ const pinkBtn = document.querySelector(".pink");
 const purpleBtn = document.querySelector(".purple");
 const blueBtn = document.querySelector(".blue");
 const greenBtn = document.querySelector(".green");
+const removeAllBtn = document.querySelector(".removeAllBtn");
 const notepadSpace = document.querySelector(".notepadSpace");
 
 const addNewCard = (color) => {
@@ -23,4 +24,9 @@ blueBtn.addEventListener("click", function () {
 });
 greenBtn.addEventListener("click", function () {
 	addNewCard("green");
+});
+removeAllBtn.addEventListener("click", function () {
+	while (notepadSpace.firstChild) {
+		notepadSpace.removeChild(notepadSpace.firstChild);
+	}
 });
