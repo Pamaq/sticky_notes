@@ -117,16 +117,26 @@ body {
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+.otherBtn {
+	height: 2rem;
+	width: 2rem;
+	border-radius: 5px;
+	border-color: rgb(219, 219, 208);
+	padding: 5px;
+	margin: 5px;
+	cursor: pointer;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
 .noteText {
 	font-size: 0.75rem;
 	max-width: 300px;
 	overflow-wrap: break-word;
 	cursor: text;
 	padding: 1rem;
-}
-.removeBtn {
-	padding: 0.25rem;
-	margin: 0.5rem;
 }
 /* .heartBtn {
 	border-radius: 50%;
