@@ -5,25 +5,30 @@ const greenBtn = document.querySelector(".green");
 const removeAllBtn = document.querySelector(".removeAllBtn");
 const notepadSpace = document.querySelector(".notepadSpace");
 
+if ((notepadSpace.childNodes.length = 0)) {
+	const emptyMessage = document.createElement("p");
+	emptyMessage.textContent = "Looks like you have no notes right now!";
+	notepadSpace.append(emptyMessage);
+}
 const addNewCard = (color) => {
 	const newNote = document.createElement("div");
 	const newRemoveBtn = document.createElement("button");
-	const heartBtn = document.createElement("button");
 	const noteText = document.createElement("p");
-
+	// const heartBtn = document.createElement("button");
 	newNote.classList.add("note");
 	notepadSpace.append(newNote);
 	newNote.classList.add(`${color}`);
 	newRemoveBtn.textContent = "✖️";
+	newRemoveBtn.classList.add("removeBtn");
 	newRemoveBtn.style.alignSelf = "end";
 	newRemoveBtn.classList.add("removeAllBtn");
 	newNote.append(newRemoveBtn);
-	heartBtn.textContent = "❤️";
-	newNote.append(heartBtn);
-	heartBtn.addEventListener("click", function () {
-		let notesArr = Array.from(querySelectorAll(".note div"));
-		
-	});
+	// newNote.append(heartBtn);
+	// heartBtn.textContent = "❤️";
+	// heartBtn.addEventListener("click", function () {
+	// 	console.log(notesArr);
+	// 	newNote = notesArr[0];
+	// });
 	newRemoveBtn.addEventListener("click", function () {
 		newRemoveBtn.parentElement.remove();
 	});
