@@ -45,7 +45,7 @@ body {
 .notepadSpace {
 	max-height: 100vh;
 	/* background-color: rgb(255, 255, 147); */
-	background-image: url("/img/cherry-blossom-tree-1225186_960_720.jpg");
+	background-image: url("./img/cherry-blossom-tree-1225186_960_720.jpg");
 	margin: 1rem;
 	padding: 0.5rem;
 	display: flex;
